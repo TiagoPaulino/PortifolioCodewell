@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap");
+body {
+  font-family: "Prata", serif;
+  font-family: "Inter", sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+p {
+  /* font-weight: bold; */
+  font-size: 18px;
+  line-height: 25px;
+}
+.bold {
+  font-weight: bolder;
+}
+.italic {
+  font-style: italic;
+}
+:root {
+  --tittle_text: "Prata", Serif;
+  --body_text: "Inter", sans-serif;
+  --color_text_1: #ffffff;
+  --color_text_2: #a3a3a3;
+  --background_color_1: #0a0a0b;
+  --background_color_2: #2e3038;
+}
+
+header {
+  background-color: var(--background_color_1);
+}
+.container {
+  margin: 0px auto !important;
+  max-width: 1100px !important;
+}
+.top {
+  height: 80px;
+  align-items: center;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important ;
+}
+.top_area {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo h2 {
+  font-family: var(--tittle_text);
+  color: var(--color_text_1);
+  font-weight: normal;
+  font-size: 20px;
+}
+.top_menu_item {
+  color: var(--color_text_2);
+  margin: 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.top_menu_item:hover {
+  color: #fbe850;
+}
+
+.gettouch_button {
+  padding: 15px 30px;
+  background-color: #fbe850;
+  color: #0a0a0b;
+  font-weight: bold;
+  font-family: var(--tittle_text);
+}
+
+.header_texts {
+  padding: 50px 0px;
+  max-width: 700px;
+}
+.header_text_tittle {
+  color: var(--color_text_1);
+  font-family: var(--tittle_text);
+  margin-right: auto;
+
+  font-size: 58px;
+  font-weight: normal;
+}
+.header_text_subtitle {
+  margin-top: 10px;
+  line-height: 30px;
+  color: #7d7d7d;
+  max-width: 640px;
+}
+.companies {
+  background-color: var(--background_color_1);
+  padding: 20px 0px 50px;
+}
+.companies_logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.articles {
+  background-color: var(--background_color_1);
+}
+.articles_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0px 50px;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  max-width: 515px;
+  margin-bottom: 30px;
+}
+.article_pic {
+  width: 100%;
+}
+.article_link {
+  font-family: var(--tittle_text);
+  color: var(--color_text_1);
+  font-size: 40px;
+  margin: 15px 0px;
+}
+.article_coment {
+  color: var(--color_text_2);
+}
+.about {
+  background-color: var(--background_color_2);
+  padding: 70px 0px;
+}
+.about_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about_title {
+  color: var(--color_text_1);
+  font-family: var(--tittle_text);
+  font-weight: normal;
+  font-size: 35px;
+}
+.about_text {
+  max-width: 515px;
+}
+.about_text p {
+  margin: 15px 0px;
+  color: var(--color_text_2);
+  line-height: 25px;
+}
+.job {
+  background-color: var(--background_color_1);
+  padding: 80px 0px;
+}
+.job_area {
+  max-width: 590px;
+}
+
+.job_title {
+  font-family: var(--tittle_text);
+  color: var(--color_text_1);
+  font-weight: normal;
+  font-size: 35px;
+}
+.job_area_text p {
+  max-width: 520px;
+  margin: 10px 0px;
+  color: var(--color_text_2);
+  line-height: 25px;
+}
+.job_button {
+  margin-top: 30px;
+}
+footer {
+  background-color: var(--background_color_2);
+  padding: 15px 0px;
+}
+footer .logo h2 {
+  font-size: 15px;
+}
+.footer_area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.social a {
+  margin: 0px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px 20px;
+  }
+
+  .top_menu {
+    display: none;
+  }
+  .top_gettouch {
+    display: none;
+  }
+  .header_text_tittle {
+    font-size: 40px;
+    width: 80%;
+  }
+  .header_text_subtitle {
+    font-size: 15px;
+  }
+  .companies_logos {
+    justify-content: center;
+    padding: 0px 60px;
+  }
+  .companies_logos img {
+    margin: 10px;
+  }
+  .article {
+    margin-bottom: 50px;
+  }
+}
